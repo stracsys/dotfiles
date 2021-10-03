@@ -1,0 +1,29 @@
+st-alpha-0.8.2.diff
+st-anysize-0.8.4.diff
+st-blinking_cursor-20200531-a2a7044.diff
+st-hidecursor-0.8.3.diff
+st-boxdraw_v2-0.8.3.diff
+st-scrollback-20210507-4536f46.diff
+st-scrollback-mouse-20191024-a2c479c.diff
+patching file config.def.h
+Reversed (or previously applied) patch detected!  Assume -R? [n] 
+Apply anyway? [n] 
+Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file config.def.h.rej
+patching file st.c
+Reversed (or previously applied) patch detected!  Assume -R? [n] 
+Apply anyway? [n] 
+Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file st.c.rej
+patching file st.h
+Reversed (or previously applied) patch detected!  Assume -R? [n] 
+Apply anyway? [n] 
+Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file st.h.rej
+patching file x.c
+Reversed (or previously applied) patch detected!  Assume -R? [n] 
+Apply anyway? [n] 
+Skipping patch.
+2 out of 2 hunks ignored -- saving rejects to file x.c.rej
+st-scrollback-mouse-altscreen-20200416-5703aa0.diff
+st-scrollback-mouse-increment-0.8.2.diff
