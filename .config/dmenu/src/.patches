@@ -1,0 +1,21 @@
+dmenu-
+{
+  border-4.9.diff,
+  caseinsensitive-20200523-db6093f.diff,
+  center-20200111-8cd37e1.diff,
+  dynamicoptions-20200526-01e2dfc7.diff,
+  fuzzymatch-4.9.diff,
+  fuzzyhighlight-4.9.diff,
+  grid-4.9.diff,
+  gridnav-5.0.diff,
+  highpriority-4.9.diff,
+  initialtext-4.7.diff,
+  instant-4.7.diff,
+  lineheight-5.0.diff,
+  morecolor-20190922-4bf895b.diff,
+  numbers-4.9.diff,
+  password-5.0.diff,
+  preselect-20200513-db6093f.diff,
+  xyw-5.0.diff,
+  rejectnomatch-4.7.diff
+}
