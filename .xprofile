@@ -1,0 +1,9 @@
+#!/bin/bash
+
+[[ -f "$HOME/.zshenv" ]] && source "$HOME/.zshenv"
+[[ -f "$ZDOTDIR/.zprofile" ]] && source "$ZDOTDIR/.zprofile"
+
+export PATH="$HOME/.config/rofi/bin:${PATH}"
+
+export CM_SELECTIONS="clipboard"
+
