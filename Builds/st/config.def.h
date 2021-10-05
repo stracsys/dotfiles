@@ -5,7 +5,11 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrainsMono Nerd Font:pixelsize=24:antialias=true:autohint=true";
+static char *fonts[] = {
+	"JetBrainsMono Nerd Font:pixelsize=24:antialias=true:autohint=true",
+	"Iosevka Term:pixelsize=24:antialias=true:autohint=true",
+};
+static size_t currentfont = 0;
 static int borderpx = 2;
 
 /*
@@ -188,8 +192,9 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
-	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
+	{ XK_ANY_MOD,           XK_Page_Up,     kscrollup,      {.i = -1} },
+	{ XK_ANY_MOD,           XK_Page_Down,   kscrolldown,    {.i = -1} },
+	{ TERMMOD,              XK_S,           cyclefonts,     {}        },
 };
 
 /*
