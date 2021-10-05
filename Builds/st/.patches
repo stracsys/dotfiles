@@ -27,3 +27,4 @@ Skipping patch.
 2 out of 2 hunks ignored -- saving rejects to file x.c.rej
 st-scrollback-mouse-altscreen-20200416-5703aa0.diff
 st-scrollback-mouse-increment-0.8.2.diff
+st-meta-vim-full-20210425-43a395a-8.4.patch
