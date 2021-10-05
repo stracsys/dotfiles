@@ -1,3 +1,5 @@
 [user]
 	name = Aboubacar TRAORE
 	email = stracsys@gmail.com
+[init]
+	defaultBranch = main
