@@ -37,6 +37,7 @@ source "$ZDOTDIR/functions/title.zsh"
 # Alias
 source "$ZDOTDIR/alias/alias.zsh"
 source "$ZDOTDIR/alias/common-aliases.zsh"
+source "$ZDOTDIR/alias/gitaliases.zsh"
 
 # Prompt #
 source "$HOME/Git/powerlevel10k/powerlevel10k.zsh-theme"
