@@ -110,7 +110,7 @@ float alpha = 0.95;
 
 /* Terminal colors (16 first used in escape sequence) */
 #include "palenight.h"
-unsigned int const currentBg = 6, buffSize = 2048;
+unsigned int const currentBg = 258, buffSize = /*2048*/10000;
 /// Enable double / triple click yanking / selection of word / line.
 int const mouseYank = 1, mouseSelect = 0;
 /// [Vim Browse] Colors for search results currently on screen.
