@@ -7,7 +7,7 @@
  */
 static char *fonts[] = {
 	"JetBrainsMono Nerd Font:pixelsize=24:antialias=true:autohint=true",
-	"Iosevka Term:pixelsize=24:antialias=true:autohint=true",
+	"Iosevka:pixelsize=24:antialias=true:autohint=true",
 };
 static size_t currentfont = 0;
 static int borderpx = 2;
