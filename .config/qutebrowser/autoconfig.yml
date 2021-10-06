@@ -6,6 +6,12 @@
 
 config_version: 2
 settings:
+  bindings.commands:
+    global:
+      normal:
+        ',M': hint links spawn umpv {hint-url}
+        ',m': spawn umpv {url}
+        ;M: hint --rapid links spawn umpv {hint-url}
   editor.command:
     global:
     - st
