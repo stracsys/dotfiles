@@ -1,4 +1,5 @@
-browser="brave"
+browser="qutebrowser"
+browser_alt="brave"
 editor="emacsclient -c -e -s doom"
 file_manager="thunar"
 export browser editor file_manager

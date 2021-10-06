@@ -50,6 +50,8 @@ static const Rule rules[] = {
     1 << 1,              1,          0,           -1,         0,0,0,0,0, 0 },
   { "Brave-browser",     NULL,       NULL,
     1 << 1,              1,          0,           -1,         0,0,0,0,0, 0 },
+  { "qutebrowser",       NULL,       NULL,
+    1 << 1,              1,          0,           -1,         0,0,0,0,0, 0 },
   { "pcmanfm",           NULL,       NULL,
     1 << 3,              1,          0,           -1,         0,0,0,0,0, 0 },
   { "Thunar",            NULL,       NULL,
@@ -152,7 +154,8 @@ static Key keys[] = {
   { ALTKEY, -1, XK_F1, spawn, SHCMD("dmenu_launcher.sh") },
   { MODKEY, -1, XK_Return, spawn, {.v = termcmd } },
   { MODKEY|ShiftMask, -1, XK_Return, togglescratch, {.v = scratchpadcmd } },
-  { MODKEY, XK_x, XK_b, spawn, SHCMD("$browser") },
+  { MODKEY, XK_x, XK_q, spawn, SHCMD("$browser") },
+  { MODKEY, XK_x, XK_b, spawn, SHCMD("$browser_alt") },
   { MODKEY, XK_x, XK_e, spawn, SHCMD("$editor") },
   { MODKEY, XK_x, XK_f, spawn, SHCMD("$file_manager") },
   /*****************/
