@@ -52,7 +52,7 @@ static const Rule rules[] = {
     1 << 1,              1,          0,           -1,         0,0,0,0,0, 0 },
   { "qutebrowser",       NULL,       NULL,
     1 << 1,              1,          0,           -1,         0,0,0,0,0, 0 },
-  { "pcmanfm",           NULL,       NULL,
+  { "Pcmanfm",           NULL,       NULL,
     1 << 3,              1,          0,           -1,         0,0,0,0,0, 0 },
   { "Thunar",            NULL,       NULL,
     1 << 3,              1,          0,           -1,         0,0,0,0,0, 0 },
@@ -115,8 +115,6 @@ static const Layout layouts[] = {
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-n", "-l", "10", "-h", "50", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "tabbed", "-c", "-n", "St", "-r", "2", "st", "-w", "''", NULL };
 /*First arg only serves to match against key in rules*/
 static const char *scratchpadcmd[] = {"S", "tabbed", "-f", "-n", "Scratchpad", "alacritty", "--embed", NULL};
@@ -129,7 +127,7 @@ void resetnmaster(const Arg *arg);
 static Key keys[] = {
   /* modifier     chain     key     function    argument */
   /***** Layout *****/
-  { MODKEY, -1, XK_p, spawn, SHCMD("dwm_layout.sh") },
+  { MODKEY, -1, XK_p, spawn, SHCMD("dwm_layout") },
   { MODKEY|ControlMask, -1, XK_b, togglebar, {0} },
   { MODKEY|ALTKEY, -1, XK_j, incnmaster, {.i = +1 } },
   { MODKEY|ALTKEY, -1, XK_k, incnmaster, {.i = -1 } },
@@ -151,13 +149,13 @@ static Key keys[] = {
 
   /***** Spawn *****/
   // { ALTKEY, -1, XK_F1, spawn, SHCMD("launcher_misc") },
-  { ALTKEY, -1, XK_F1, spawn, SHCMD("dmenu_launcher.sh") },
+  { ALTKEY, -1, XK_F1, spawn, SHCMD("dm_launcher") },
   { MODKEY, -1, XK_Return, spawn, {.v = termcmd } },
   { MODKEY|ShiftMask, -1, XK_Return, togglescratch, {.v = scratchpadcmd } },
-  { MODKEY, XK_x, XK_q, spawn, SHCMD("$browser") },
-  { MODKEY, XK_x, XK_b, spawn, SHCMD("$browser_alt") },
+  { MODKEY, XK_x, XK_b, spawn, SHCMD("$browser") },
   { MODKEY, XK_x, XK_e, spawn, SHCMD("$editor") },
   { MODKEY, XK_x, XK_f, spawn, SHCMD("$file_manager") },
+  { MODKEY, XK_x, XK_h, spawn, SHCMD("$hypervisor") },
   /*****************/
 
   /****** Focus *****/
@@ -203,14 +201,14 @@ static Key keys[] = {
   { MODKEY|ControlMask, -1, XK_q, quit, {1} }, //restart dwm 
 
   /***** Dmenu *****/
-  { MODKEY, -1, XK_v, spawn, SHCMD("clipmenu.sh") },
-  { MODKEY, -1, XK_n, spawn, SHCMD("networkmanager_dmenu.sh") },
-  { MODKEY|ShiftMask, -1, XK_n, spawn, SHCMD("dmenu_bluetooth.sh") },
-  { MODKEY, XK_d, XK_t, spawn, SHCMD("dmenu_todo") },
-  { MODKEY, XK_d, XK_l, spawn, SHCMD("mpdmenu.sh -l") },
-  { MODKEY, XK_d, XK_p, spawn, SHCMD("mpdmenu.sh -p") },
-  { 0, -1, XK_Print, spawn, SHCMD("dmenu_screenshot.sh") },
-  { MODKEY, -1, XK_Print, spawn, SHCMD("dmenu_shot.sh") },
+  { MODKEY, -1, XK_v, spawn, SHCMD("dm_clip") },
+  { MODKEY, -1, XK_n, spawn, SHCMD("dm_network") },
+  { MODKEY|ShiftMask, -1, XK_n, spawn, SHCMD("dm_bluetooth") },
+  { MODKEY, XK_d, XK_t, spawn, SHCMD("dm_todo") },
+  { MODKEY, XK_d, XK_l, spawn, SHCMD("dm_mpd -l") },
+  { MODKEY, XK_d, XK_p, spawn, SHCMD("dm_mpd -p") },
+  { 0, -1, XK_Print, spawn, SHCMD("dm_screenshot") },
+  { MODKEY, -1, XK_Print, spawn, SHCMD("dm_shot") },
   /*****************/
 
   /***** Audio and brightness *****/

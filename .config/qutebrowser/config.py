@@ -14,7 +14,7 @@ import style.dracula
 
 ## This is here so configs done via the GUI are still loaded.
 ## Remove it to not load settings done via the GUI.
-config.load_autoconfig(True)
+config.load_autoconfig(False)
 
 style.dracula.blood(c, {
     'spacing': {
@@ -520,7 +520,7 @@ c.auto_save.session = True
 ## `colors.webpage.darkmode.threshold.background` to 205.  - "With
 ## selective inversion of everything": Combines the two variants   above.
 ## Type: Bool
-c.colors.webpage.darkmode.enabled = False
+#  c.colors.webpage.darkmode.enabled = False
 
 ## Render all colors as grayscale. This only has an effect when
 ## `colors.webpage.darkmode.algorithm` is set to `lightness-hsl` or
@@ -579,7 +579,7 @@ c.colors.webpage.darkmode.enabled = False
 ##   - auto: Use the system-wide color scheme setting.
 ##   - light: Force a light theme.
 ##   - dark: Force a dark theme.
-# c.colors.webpage.preferred_color_scheme = 'auto'
+c.colors.webpage.preferred_color_scheme = 'dark'
 
 ## Number of commands to save in the command history. 0: no history / -1:
 ## unlimited
@@ -677,7 +677,7 @@ c.confirm_quit = ['downloads']
 
 ## Automatically start playing `<video>` elements.
 ## Type: Bool
-# c.content.autoplay = True
+c.content.autoplay = False
 
 ## List of URLs to ABP-style adblocking rulesets.  Only used when Brave's
 ## ABP-style adblocker is used (see `content.blocking.method`).  You can
@@ -1734,7 +1734,7 @@ c.input.insert_mode.auto_load = True
 ##   - tr-TR: Turkish (Turkey)
 ##   - uk-UA: Ukrainian (Ukraine)
 ##   - vi-VN: Vietnamese (Viet Nam)
-#  c.spellcheck.languages = ['fr-FR', 'en-US']
+c.spellcheck.languages = ['fr-FR', 'en-US']
 
 ## Padding (in pixels) for the statusbar.
 ## Type: Padding
@@ -2378,3 +2378,9 @@ c.url.start_pages = ['https://google.fr']
 # config.bind('Y', 'prompt-accept --save yes', mode='yesno')
 # config.bind('n', 'prompt-accept no', mode='yesno')
 # config.bind('y', 'prompt-accept yes', mode='yesno')
+config.bind(',m', 'hint links spawn umpv {hint-url}')
+config.bind(',M', 'spawn umpv {url}')
+config.bind(';M', 'hint --rapid links spawn umpv {hint-url}')
+config.bind(',t', 'hint links userscript translate')
+config.bind('<Ctrl+T>', 'spawn --userscript translate')
+config.bind('<Ctrl+Shift+T>', 'spawn --userscript translate --text')

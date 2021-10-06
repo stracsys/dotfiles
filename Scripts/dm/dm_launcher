@@ -1,0 +1,3 @@
+#! /usr/bin/env bash
+
+dm_run -c -l 10 -h 50

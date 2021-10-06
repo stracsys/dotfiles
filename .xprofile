@@ -6,4 +6,5 @@
 export PATH="$HOME/.config/rofi/bin:${PATH}"
 
 export CM_SELECTIONS="clipboard"
+export QUTE_TRANS_TARGET="fr"
 
