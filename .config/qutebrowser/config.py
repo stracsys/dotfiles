@@ -673,7 +673,7 @@ c.colors.webpage.darkmode.enabled = False
 ##   - multiple-tabs: Show a confirmation if multiple tabs are opened.
 ##   - downloads: Show a confirmation if downloads are running
 ##   - never: Never show a confirmation.
-# c.confirm_quit = ['never']
+c.confirm_quit = ['downloads']
 
 ## Automatically start playing `<video>` elements.
 ## Type: Bool
@@ -1007,7 +1007,7 @@ c.colors.webpage.darkmode.enabled = False
 ## still be downloaded by clicking the download button in the pdf.js
 ## viewer.
 ## Type: Bool
-# c.content.pdfjs = False
+c.content.pdfjs = True
 
 ## Allow websites to request persistent storage quota via
 ## `navigator.webkitPersistentStorage.requestQuota`.
@@ -1161,12 +1161,12 @@ c.colors.webpage.darkmode.enabled = False
 ## Valid values:
 ##   - top
 ##   - bottom
-# c.downloads.position = 'top'
+c.downloads.position = 'bottom'
 
 ## Duration (in milliseconds) to wait before removing finished downloads.
 ## If set to -1, downloads are never removed.
 ## Type: Int
-# c.downloads.remove_finished = -1
+c.downloads.remove_finished = 10000
 
 ## Editor (and arguments) to use for the `edit-*` commands. The following
 ## placeholders are defined:  * `{file}`: Filename of the file to be
@@ -1175,7 +1175,7 @@ c.colors.webpage.darkmode.enabled = False
 ## `{line0}`: Same as `{line}`, but starting from index 0. * `{column0}`:
 ## Same as `{column}`, but starting from index 0.
 ## Type: ShellCommand
-# c.editor.command = ['gvim', '-f', '{file}', '-c', 'normal {line}G{column0}l']
+c.editor.command = ['st', '-e' ,'nvim', '-f', '{file}', '-c', 'normal {line}G{column0}l']
 
 ## Encoding to use for the editor.
 ## Type: Encoding
