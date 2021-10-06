@@ -32,7 +32,7 @@ export dwm_config sway_config
 dwm_src="$dwm_config/src"
 export dwm_src dmenu_src
 
-scripts="$HOME/Scripts"
+scripts="$HOME/scripts"
 
 dm_scripts="$scripts/dm"
 py_scripts="$scripts/py"
