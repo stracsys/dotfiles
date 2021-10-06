@@ -50,9 +50,9 @@ export PATH="$XDG_CONFIG_HOME/doom-emacs/bin:$HOME/.cargo/bin:${PATH}"
 #################
 
 ###### Execute #####
-# nerdfetch.sh
-pfetch.sh
-colorblocks.sh
+# nerdfetch
+pfetch
+colorblocks
 ####################
 
 # Vterm emacs

@@ -30,15 +30,15 @@ sway_config="$XDG_CONFIG_HOME/sway"
 export dwm_config sway_config
 
 dwm_src="$dwm_config/src"
-dmenu_src="$dmenu_src/src"
 export dwm_src dmenu_src
 
 scripts="$HOME/Scripts"
-dmenu_scripts="$dmenu_config/scripts"
+
+dm_scripts="$scripts/dm"
 py_scripts="$scripts/py"
 dwm_scripts="$dwm_config/scripts"
-export scripts dmenu_scripts py_scripts dwm_scripts
+export scripts dm_scripts py_scripts dwm_scripts
 
-export PATH="$bin:$scripts:$dmenu_scripts:$py_scripts:$dwm_scripts:${PATH}"
+export PATH="$bin:$scripts:$dm_scripts:$py_scripts:$dwm_scripts:${PATH}"
 
 export RANGER_DEVICONS_SEPARATOR=" "
