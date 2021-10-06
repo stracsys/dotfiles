@@ -20,8 +20,8 @@ export term term_alt
 export sterm sterm_alt
 
 bin="$HOME/bin"
-builds="$HOME/Builds"
-wallpapers="$HOME/Images/Wallpapers"
+builds="$HOME/builds"
+wallpapers="$HOME/Images/wallpapers"
 export bin builds wallpapers
 
 dwm_config="$XDG_CONFIG_HOME/dwm"
