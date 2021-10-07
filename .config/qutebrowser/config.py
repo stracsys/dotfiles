@@ -1883,7 +1883,7 @@ c.tabs.last_close = 'default-page'
 
 ## Padding (in pixels) around text for tabs.
 ## Type: Padding
-c.tabs.padding = {'top': 0, 'bottom': 0, 'left': 5, 'right': 5}
+c.tabs.padding = {'top': 5, 'bottom': 5, 'left': 5, 'right': 5}
 
 ## Force pinned tabs to stay at fixed URL.
 ## Type: Bool
@@ -1934,7 +1934,7 @@ c.tabs.show = 'multiple'
 ##   - left
 ##   - right
 ##   - center
-# c.tabs.title.alignment = 'left'
+#  c.tabs.title.alignment = 'left'
 
 ## Format to use for the tab title. The following placeholders are
 ## defined:  * `{perc}`: Percentage as a string like `[10%]`. *
