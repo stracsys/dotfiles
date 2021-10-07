@@ -14,6 +14,7 @@ export hypervisor hypervisor_alt
 export launcher
 
 bin="$HOME/bin"
+git="$HOME/git"
 builds="$HOME/builds"
 wallpapers="$HOME/Images/wallpapers"
 export bin builds wallpapers

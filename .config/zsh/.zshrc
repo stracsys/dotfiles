@@ -42,7 +42,7 @@ source "$ZDOTDIR/alias/git.zsh"
 [[ $(lsb_release -sd) = "Arch Linux" ]] || source "$ZDOTDIR/alias/pacman.zsh"
 
 # Prompt #
-source "$HOME/Git/powerlevel10k/powerlevel10k.zsh-theme"
+source "$git/powerlevel10k/powerlevel10k.zsh-theme"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 ########################
