@@ -1,0 +1,16 @@
+#! /usr/bin/env bash
+
+head -n 249 $dwm_src/config.def.h \
+  | tail -n 117 \
+  | rg -e "MODKEY" -e "ALTKEY" -e " 0," \
+  | cut -d " " -f4- \
+  | sed s/MODKEY/M/ \
+  | sed s/ALTKEY/A/ \
+  | sed s/ShiftMask/S/ \
+  | sed s/ControlMask/C/ \
+  | sed s/,\ \-1,/\ \-/ \
+  | sed s/0\ -\ // \
+  | sed s/XK_// \
+  | sed s/XF86// \
+  | sed s/\ },// \
+  | dmenu -c -F -l 10 -h 50 -p "DWM KEY" >> /dev/null

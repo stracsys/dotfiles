@@ -1,0 +1,6 @@
+alias pac="pacman"
+alias pacinstall="pacman -S"
+alias pacremove="pacman -Rns"
+alias pacquery="pacman -Qs"
+alias pacclean="pacman -Scc"
+alias paclog="bat /var/log/pacman.log"

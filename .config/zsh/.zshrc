@@ -36,8 +36,10 @@ source "$ZDOTDIR/functions/title.zsh"
 
 # Alias
 source "$ZDOTDIR/alias/alias.zsh"
-source "$ZDOTDIR/alias/common-aliases.zsh"
-source "$ZDOTDIR/alias/gitaliases.zsh"
+source "$ZDOTDIR/alias/common.zsh"
+source "$ZDOTDIR/alias/git.zsh"
+
+[[ $(lsb_release -sd) = "Arch Linux" ]] || source "$ZDOTDIR/alias/pacman.zsh"
 
 # Prompt #
 source "$HOME/Git/powerlevel10k/powerlevel10k.zsh-theme"

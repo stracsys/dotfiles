@@ -7,17 +7,11 @@ file_manager_alt="pcmanfm"
 hypervisor="virt-manager"
 hypervisor_alt="virtualbox"
 launcher="dm_launcher"
-term="tab_st"
-term_alt="tab_alacritty"
-sterm="tab_salacritty"
-sterm_alt="tab_sst"
 export browser browser_alt
 export editor editor_alt
 export file_manager file_manager_alt
 export hypervisor hypervisor_alt
 export launcher
-export term term_alt
-export sterm sterm_alt
 
 bin="$HOME/bin"
 builds="$HOME/builds"

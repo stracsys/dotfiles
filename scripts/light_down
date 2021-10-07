@@ -1,0 +1,3 @@
+#! /usr/bin/env bash
+
+light -U 5 || xbacklight -dec 5
