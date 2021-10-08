@@ -1,9 +1,6 @@
 [submodule "git/powerlevel10k"]
 	path = git/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k
-[submodule ".config/ranger/plugins/ranger_devicons"]
-	path = .config/ranger/plugins/ranger_devicons
-	url = https://github.com/alexanderjeurissen/ranger_devicons
 [submodule "git/Qute-Translate"]
 	path = git/Qute-Translate
 	url = https://github.com/AckslD/Qute-Translate
@@ -16,9 +13,6 @@
 [submodule "git/styli.sh"]
 	path = git/styli.sh
 	url = https://github.com/thevinter/styli.sh
-[submodule ".config/doom-emacs"]
-	path = .config/doom-emacs
-	url = https://github.com/hlissner/doom-emacs
 [submodule "git/ranger_devicons"]
 	path = git/ranger_devicons
 	url = https://github.com/alexanderjeurissen/ranger_devicons
