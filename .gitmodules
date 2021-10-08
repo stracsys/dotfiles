@@ -16,12 +16,18 @@
 [submodule "git/styli.sh"]
 	path = git/styli.sh
 	url = https://github.com/thevinter/styli.sh
-[submodule ".config/emacs"]
-	path = .config/emacs
-	url = https://github.com/plexus/chemacs2
 [submodule ".config/doom-emacs"]
 	path = .config/doom-emacs
 	url = https://github.com/hlissner/doom-emacs
-[submodule ".config/qutebrowser/style/dracula"]
-	path = .config/qutebrowser/style/dracula
-	url = https://github.com/dracula/qutebrowser-dracula-theme.git
+[submodule "git/ranger_devicons"]
+	path = git/ranger_devicons
+	url = https://github.com/alexanderjeurissen/ranger_devicons
+[submodule "git/chemacs2"]
+	path = git/chemacs2
+	url = https://github.com/plexus/chemacs2
+[submodule "git/doom-emacs"]
+	path = git/doom-emacs
+	url = https://github.com/hlissner/doom-emacs
+[submodule "git/qutebrowser-dracula-theme"]
+	path = git/qutebrowser-dracula-theme
+	url = https://github.com/dracula/qutebrowser-dracula-theme
