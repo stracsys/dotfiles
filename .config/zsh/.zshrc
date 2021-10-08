@@ -57,6 +57,8 @@ pfetch
 colorblocks
 ####################
 
+eval "$(fasd --init auto)"
+
 # Vterm emacs
 # vterm_printf(){
 #     if [ -n "$TMUX" ] && ([ "${TERM%%-*}" = "tmux" ] || [ "${TERM%%-*}" = "screen" ] ); then

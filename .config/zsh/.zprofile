@@ -17,7 +17,7 @@ bin="$HOME/bin"
 git="$HOME/git"
 builds="$HOME/builds"
 wallpapers="$HOME/Images/wallpapers"
-export bin builds wallpapers
+export bin git builds wallpapers
 
 dwm_config="$XDG_CONFIG_HOME/dwm"
 dmenu_config="$XDG_CONFIG_HOME/dmenu"
