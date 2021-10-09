@@ -36,4 +36,5 @@ export scripts dm_scripts py_scripts dwm_scripts
 
 export PATH="$bin:$scripts:$dm_scripts:$py_scripts:$dwm_scripts:${PATH}"
 
+export RANGER_LOAD_DEFAULT_RC="FALSE"
 export RANGER_DEVICONS_SEPARATOR=" "
